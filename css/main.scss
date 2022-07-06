@@ -1,0 +1,120 @@
+$background: hsl(185, 75%, 39%);
+$heading: hsl(229, 23%, 23%);
+$text: hsl(227, 10%, 46%);
+$gray: hsl(0, 0%, 59%);
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background;
+  position: relative;
+  min-height: 100vh;
+  font-size: 1.125rem;
+  overflow: hidden;
+}
+
+.top-bubble,
+.bottom-bubble {
+  position: absolute;
+  width: 100vw;
+}
+
+.top-bubble {
+  bottom: 40%;
+  right: 40%;
+}
+
+.bottom-bubble {
+  top: 40%;
+  left: 40%;
+}
+
+.card {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  width: 19.444em;
+  height: 20.778em;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.833em;
+  position: relative;
+
+  .card__bg {
+    width: 100%;
+    height: 7.778em;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    border-radius: 0.8333em 0.8333em 0 0;
+  }
+
+  .card__headshot {
+    border-radius: 50%;
+    width: 5.333em;
+    margin-top: 5.111em;
+    border: 0.25em solid white;
+    z-index: 1;
+  }
+
+  .card__title {
+    display: flex;
+    width: 7.5em;
+    justify-content: space-between;
+    margin-top: 1.333em;
+    margin-bottom: 0.72em;
+
+    h1 {
+      font-size: 1.125rem;
+      color: $heading;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: $text;
+      margin: 0;
+    }
+  }
+
+  .card__location {
+    color: $text;
+    font-size: 0.875rem;
+  }
+
+  hr {
+    height: 1px;
+    width: 100%;
+    margin-top: 1.389em;
+  }
+
+  .card__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13.833em;
+    height: 4.889em;
+    text-align: center;
+    margin: 0;
+  }
+
+  .card__social__column {
+    .card__social__column__statistic {
+      font-weight: bold;
+      color: $heading;
+      margin-bottom: 0.33em;
+    }
+
+    .card__social__column__label {
+      font-size: 0.625rem;
+      color: $text;
+      letter-spacing: 0.15em;
+    }
+  }
+}

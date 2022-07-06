@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="images/bg-pattern-top.svg"
+      alt="Background Pattern - Top"
+      class="top-bubble"
+    />
+    <img
+      src="images/bg-pattern-bottom.svg"
+      alt="Background Pattern - Bottom"
+      class="bottom-bubble"
+    />
+    <main class="card">
+      <img
+        src="images/bg-pattern-card.svg"
+        alt="Background Pattern"
+        class="card__bg"
+      />
+      <img
+        src="images/image-victor.jpg"
+        alt="Victor Crest Headshot"
+        class="card__headshot"
+      />
+      <div class="card__title">
+        <h1>Victor Crest</h1>
+        <h2>26</h2>
+      </div>
+      <div class="card__location">London</div>
+      <hr />
+      <div class="card__social">
+        <div class="card__social__column">
+          <div class="card__social__column__statistic">80K</div>
+          <div class="card__social__column__label">Followers</div>
+        </div>
+        <div class="card__social__column">
+          <div class="card__social__column__statistic">803K</div>
+          <div class="card__social__column__label">Likes</div>
+        </div>
+        <div class="card__social__column">
+          <div class="card__social__column__statistic">1.4k</div>
+          <div class="card__social__column__label">Photos</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
